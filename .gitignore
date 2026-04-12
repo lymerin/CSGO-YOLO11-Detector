@@ -1,11 +1,10 @@
 ﻿
-.idea/
+.vscode/
 
+# 忽略数据集和中间产物
 dataset/
-*.pt
-*.onnx
-
 runs/
 
-__pycache__/
-*.py[cod]
+# 重点：不要写 *.pt，或者在下面加一行排除
+# 如果你只想传这一个权重，可以这样写：
+!yolo11n.pt
